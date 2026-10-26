@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vira Web Studio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+  <header class="top">
+    <div><a class="brand brand-link" href="https://viranweb13.ir/" target="_blank" rel="noopener">VIRA <span>WEB STUDIO</span></a><div class="sub">مرکز مدیریت کارهای طراحی سایت</div></div>
+    <div class="timecluster">
+      <div class="analog" aria-label="ساعت آنالوگ">
+        <span class="tick t1"></span><span class="tick t2"></span><span class="tick t3"></span><span class="tick t4"></span>
+        <span class="hand hour" id="hourHand"></span><span class="hand minute" id="minuteHand"></span><span class="hand second" id="secondHand"></span><span class="hub"></span>
+      </div>
+      <div class="datebox"><div id="clock">--:--</div><div id="date"></div></div>
+    </div>
+  </header>
+  <section class="welcome">
+    <div class="greeting"><h1 id="greetingTitle">سلام طراح! 👋</h1><p id="greetingSubtitle">امروز قراره چه چیزی رو بسازی؟</p></div>
+    <div class="welcome-actions"><button id="editProfile" class="ghost">⚙ ویرایش عنوان</button><div class="search-wrap"><div class="search"><span>⌕</span><input id="search" placeholder="جستجوی ابزار یا وب‌سایت..." autocomplete="off" /></div><div id="searchHistory" class="search-history" hidden></div></div></div>
+  </section>
+  <section id="profileEditor" class="panel profile-editor" hidden>
+    <div class="panelhead"><h2>شخصی‌سازی خوش‌آمدگویی</h2><button id="closeEditor" class="ghost">بستن ×</button></div>
+    <label>عنوان اصلی <input id="titleInput" class="edit-input" placeholder="مثلاً سلام مدیر فروشگاه!"/></label>
+    <label>متن زیر عنوان <input id="subtitleInput" class="edit-input" placeholder="مثلاً امروز چه کاری داریم؟"/></label>
+    <div class="editor-actions"><button id="saveProfile" class="primary">ذخیره تغییرات</button><button id="resetProfile" class="ghost">بازگشت به پیش‌فرض</button></div>
+  </section>
+  <section class="stats">
+    <div class="stat"><span>کارهای امروز</span><strong id="todoCount">۰</strong></div>
+    <div class="stat"><span>انجام‌شده</span><strong id="doneCount">۰</strong></div>
+    <div class="stat"><span>تمرکز امروز</span><strong>روی پروژه بعدی ✦</strong></div>
+  </section>
+  <main class="columns">
+    <section class="panel">
+      <div class="panelhead"><h2>چک‌لیست کارها</h2><button id="addTask" class="primary">＋ افزودن کار</button></div>
+      <div id="tasks" class="tasks"></div>
+      <p class="hint">کارها روی همین مرورگر ذخیره می‌شن.</p>
+    </section>
+    <section class="panel">
+      <div class="panelhead"><h2>جعبه‌ابزار طراح</h2><span class="muted">دسترسی سریع</span></div>
+      <div class="tools">
+        <a href="https://wordpress.org/" target="_blank"><b>W</b><span>WordPress</span></a>
+        <a href="https://elementor.com/" target="_blank"><b>✦</b><span>Elementor</span></a>
+        <a href="https://search.google.com/search-console/" target="_blank"><b>⌕</b><span>Search Console</span></a>
+        <a href="https://pagespeed.web.dev/" target="_blank"><b>⚡</b><span>PageSpeed</span></a>
+        <a href="https://validator.w3.org/" target="_blank"><b>✓</b><span>HTML Validator</span></a>
+        <a href="https://chatgpt.com/" target="_blank" rel="noopener"><b>✦</b><span>ChatGPT</span></a>
+      </div>
+      <div class="note"><strong>یادداشت سریع</strong><textarea id="note" placeholder="ایده، کد یا نکته‌ای برای پروژه‌ات بنویس..."></textarea></div>
+    </section>
+  </main>
+  <footer>Vira Web Studio <span>نسخه‌ی شروع — قابل توسعه با امکانات بیشتر</span></footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

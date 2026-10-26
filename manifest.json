@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "Vira Web Studio — داشبورد طراح سایت",
+  "version": "1.1.0",
+  "description": "داشبورد طراح سایت با سابقه جست‌وجو و بازکردن مستقیم آدرس‌ها",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  }
+}
